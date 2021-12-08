@@ -116,7 +116,7 @@ color: white
 i.menu-mobile{
   position: fixed;
   color: white;
-  background-color: #17181C;
+  background-color: #512d5b;
   right: 1.5rem;
   top: 1.5rem;
   font-size: 2rem;
@@ -169,7 +169,6 @@ i.menu-mobile{
 
 .section-bg{
   background-color: #17181C;
-  
 }
 .cv .cv-title{
   font-size: 700;
@@ -224,43 +223,21 @@ section#contato p{
 section#contato .shadow1{
   box-shadow: 5px 5px 9px #512d5b;
 }
-section#contato label{
+section#contato a{
   color: white;
 }
-section#contato button.pulse{
-  background: none;
-  border: 2px solid;
-  margin: 50px;
-  padding: 15px 40px;
-  color: #a8a9b4;
-  transition: 0.25s;
-
-}
-section#contato button.pulse:hover{
-  display: flex;
-  align-items: center;
+section#contato a:hover, section#contato a:focus{
   color: #512d5b;
   border-color: #512d5b;
-  box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
-  animation: pulse 1s;
-}
-@keyframes pulse{
-  0%{
-    box-shadow: 0 0 0 0 #512d5b;
-  }
-}
-.footer{
-  background-color: #512d5b;
 }
 
 section#portifolio a.pulse{
   background: none;
   border: 2px solid;
   margin: 50px;
-  padding: 15px 40px;
+  padding: 10px;
   color: #a8a9b4;
   transition: 0.25s;
-
 }
 section#portfolio a.pulse:hover{
   display: flex;
@@ -324,3 +301,22 @@ section#portfolio a.pulse:hover{
   }
 }
 
+#footer{
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  z-index: 99999; 
+  transition: 0.3s; 
+ }
+
+ @media (max-width: 1012px) {
+   #footer{
+     position: static;
+     width: auto;
+     padding: 20px 15px;
+   }
+ }
